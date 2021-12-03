@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/album.css">
+<script type="text/javascript">
+    const artistImage = document.getElementById('artistPic');
+    window.addEventListener('scroll', function(){
+        artistPic.style.maxWidth = 90 - window.pageYOffset/10 + "vw";
+    })
+    </script>
+<script type="text/javascript">
+    const albumArt = document.getElementById('album');
+    window.addEventListener('scroll', function(){
+        album.style.maxWidth = 35 - window.pageYOffset/10 + "vw";
+    })
+    </script>
+    <head>
+        <title>I, Jonathan</title>
+    </head>
+    <body id="bg" style="background-image: url(Jonathan/bg.jpg)">
+        <img id="album" src="jonathan/album.png">
+        <br>
+        <img id=description src="Jonathan/text.png">
+        <p> 
+        <a href="modernlovers.html">LOUDER</a> <br> <br>
+        <a href="index.html" id="home">Back to start</a> <br> <br>        </p>
+    </body>
+    <img id="artistPic" src="Jonathan/jon.png"></img>
+</html>

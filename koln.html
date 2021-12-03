@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/album.css">
+<script type="text/javascript">
+    const artistImage = document.getElementById('artistPic');
+    window.addEventListener('scroll', function(){
+        artistPic.style.maxWidth = 90 - window.pageYOffset/10 + "vw";
+    })
+    </script>
+<script type="text/javascript">
+    const albumArt = document.getElementById('album');
+    window.addEventListener('scroll', function(){
+        album.style.maxWidth = 35 - window.pageYOffset/10 + "vw";
+    })
+    </script>
+    <head>
+        <title>The Koln Concert</title>
+    </head>
+    <body id="bg" style="background-image: url(Jarrett/bg.jpg)">
+        <img id="album" src="Jarrett/album.png">
+        <br>
+        <img id=description src="Jarrett/text.png">
+        <p>        
+        <a href="monk.html">Less easy to listen to</a> <br>
+        <a href="buenavista.html">More Worldly!</a> <br> <br>
+        <a href="index.html" id="home">Back to start</a> <br> <br>        </p>
+    </body>
+    <img id="artistPic" src="Jarrett/keith.png"></img>
+</html>

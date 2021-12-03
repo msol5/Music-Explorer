@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/album.css">
+<script type="text/javascript">
+    const artistImage = document.getElementById('artistPic');
+    window.addEventListener('scroll', function(){
+        artistPic.style.maxWidth = 90 - window.pageYOffset/10 + "vw";
+    })
+    </script>
+<script type="text/javascript">
+    const albumArt = document.getElementById('album');
+    window.addEventListener('scroll', function(){
+        album.style.maxWidth = 35 - window.pageYOffset/10 + "vw";
+    })
+    </script>
+    <head>
+        <title>Casanova</title>
+    </head>
+    <body id="bg" style="background-image: url(DC/bg.jpg); color:white;">
+        <img id="album" style="filter: drop-shadow(0 0 0.75rem grey);" src="DC/album.png">
+        <br>
+        <img id=description src="DC/text.png"style="filter: drop-shadow(0 0 0.75rem grey);">
+        <p>        
+            <a href="baxter.html" class="link">equally LIGHT and BRITISH but not BAROQUE</a> <br>
+            <a href="magneticfields.html" class="link">Weirdly an inspiration for this album</a> <br> <br>
+            <a href="index.html" id="home">Back to start</a> <br> <br>        </p>
+    </body>
+    <img id="artistPic" src="DC/neil.png"></img>
+</html>

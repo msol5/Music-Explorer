@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/album.css">
+<script type="text/javascript">
+    const artistImage = document.getElementById('artistPic');
+    window.addEventListener('scroll', function(){
+        artistPic.style.maxWidth = 90 - window.pageYOffset/10 + "vw";
+    })
+    </script>
+<script type="text/javascript">
+    const albumArt = document.getElementById('album');
+    window.addEventListener('scroll', function(){
+        album.style.maxWidth = 35 - window.pageYOffset/10 + "vw";
+    })
+    </script>
+    <head>
+        <title>Sleep Well Beast</title>
+    </head>
+    <body id="bg" style="background-image: url(TN/BG.jpg)">
+        <img id="album" src="TN/album.png">
+        <br>
+        <img id=description src="TN/text.png">
+        <p>
+        <a href="alt1.html">NEWER and less URBAN</a> <br>
+        <a href="eraser.html">More Synth</a> <br>
+        <a href="index.html">Back to start</a> <br> <br>
+        </p>
+    </body>
+    <img id="artistPic" src="TN/matt.png"></img>
+</html>

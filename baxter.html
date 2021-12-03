@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/album.css">
+<script type="text/javascript">
+    const artistImage = document.getElementById('artistPic');
+    window.addEventListener('scroll', function(){
+        artistPic.style.maxWidth = 90 - window.pageYOffset/10 + "vw";
+    })
+    </script>
+<script type="text/javascript">
+    const albumArt = document.getElementById('album');
+    window.addEventListener('scroll', function(){
+        album.style.maxWidth = 35 - window.pageYOffset/10 + "vw";
+    })
+    </script>
+    <head>
+        <title>The Night Chancers</title>
+    </head>
+    <body id="bg" style="background-image: url(Baxter/bg.jpg); color:white;">
+        <img id="album" style="filter: drop-shadow(0 0 0.75rem grey);" src="Baxter/album.png">
+        <br>
+        <img id=description src="Baxter/text.png"style="filter: drop-shadow(0 0 0.75rem black);">
+        <p>
+        <a href="eraser.html" class="link">equal SYNTHS but a lot HEAVIER</a> <br>
+        <a href="tdc.html" class="link">equally LIGHT and BRITISH but BAROQUE</a> <br> <br>
+        <a href="index.html" id="home">Back to start</a> <br> <br>        
+    </p>
+    </body>
+    <img id="artistPic" src="Baxter/baxter.png"></img>
+</html>

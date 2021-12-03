@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/album.css">
+<script type="text/javascript">
+    const artistImage = document.getElementById('artistPic');
+    window.addEventListener('scroll', function(){
+        artistPic.style.maxWidth = 90 - window.pageYOffset/10 + "vw";
+    })
+    </script>
+<script type="text/javascript">
+    const albumArt = document.getElementById('album');
+    window.addEventListener('scroll', function(){
+        album.style.maxWidth = 35 - window.pageYOffset/10 + "vw";
+    })
+    </script>
+    <head>
+        <title>New Moon</title>
+    </head>
+    <body id="bg" style="background-image: url(Elliott/portland.jpg); color:white;">
+        <img id="album" style="filter: drop-shadow(0 0 0.75rem grey);" src="Elliott/album.png">
+        <br>
+        <img id=description src="Elliott/text.png"style="filter: drop-shadow(0 0 0.75rem grey);">
+        <p>
+        <a href="purplemountains.html" class="link">LOUDER</a> <br>
+        <a href="frabbit.html"class="link">LOUDER but acoustic</a> <br> <br>
+        <a href="index.html" id="home">Back to start</a> <br> <br>        </p>
+    </body>
+    <img id="artistPic" src="Elliott/elliottT.png"></img>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/album.css">
+<script type="text/javascript">
+    const artistImage = document.getElementById('artistPic');
+    window.addEventListener('scroll', function(){
+        artistPic.style.maxWidth = 90 - window.pageYOffset/10 + "vw";
+    })
+    </script>
+<script type="text/javascript">
+    const albumArt = document.getElementById('album');
+    window.addEventListener('scroll', function(){
+        album.style.maxWidth = 35 - window.pageYOffset/10 + "vw";
+    })
+    </script>
+    <head>
+        <title>Buena Vista Social Club</title>
+    </head>
+    <body id="bg" style="background-image: url(BVSC/flag.jpg); color:white;">
+        <img id="album" style="min-width: 25vw !important; " src="BVSC/album.png">
+        <br>
+        <img id=description src="BVSC/text.png"style="filter: drop-shadow(0 0 0.75rem black);">
+        <p>
+        <a href="koln.html">more Eurocentric</a> <br> <br>
+        <a href="index.html" id="home">Back to start</a> <br> <br>
+        </p>
+    </body>
+    <img id="artistPic" src="BVSC/ferrer.png"></img>
+</html>

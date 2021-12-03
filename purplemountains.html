@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/album.css">
+<script type="text/javascript">
+    const artistImage = document.getElementById('artistPic');
+    window.addEventListener('scroll', function(){
+        artistPic.style.maxWidth = 90 - window.pageYOffset/10 + "vw";
+    })
+    </script>
+<script type="text/javascript">
+    const albumArt = document.getElementById('album');
+    window.addEventListener('scroll', function(){
+        album.style.maxWidth = 35 - window.pageYOffset/10 + "vw";
+    })
+    </script>
+    <head>
+        <title>Purple Mountains</title>
+    </head>
+    <body id="bg" style="background-image: url(PurpleMountains/bg.jpg)">
+        <img id="album" style="min-width: 25vw !important;" src="purplemountains/album.png">
+        <br>
+        <img id=description src="PurpleMountains/text.png"style="filter: drop-shadow(0 0 0.75rem grey);">
+        <p>        
+        <a href="alt1.html">more popular</a> <br>
+        <a href="smith.html">softer</a> <br> <br>
+        <a href="index.html" id="home">Back to start</a> <br> <br>        </p>
+    </body>
+    <img id="artistPic" src="PurpleMountains/david.png"></img>
+</html>

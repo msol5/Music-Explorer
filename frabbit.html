@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/album.css">
+<script type="text/javascript">
+    const artistImage = document.getElementById('artistPic');
+    window.addEventListener('scroll', function(){
+        artistPic.style.maxWidth = 90 - window.pageYOffset/10 + "vw";
+    })
+    </script>
+<script type="text/javascript">
+    const albumArt = document.getElementById('album');
+    window.addEventListener('scroll', function(){
+        album.style.maxWidth = 35 - window.pageYOffset/10 + "vw";
+    })
+    </script>
+    <head>
+        <title>The Midnight Organ Fight</title>
+    </head>
+    <body id="bg" style="background-image: url(FR/bg.jpg); background-color: #f3f1e1; color:white;">
+        <img id="album" src="FR/album.png" style="min-width: 25vw">
+        <br>
+        <img id=description src="FR/text.png">
+        <p>        
+        <a href="bigthief.html">Less Individual</a> <br>
+        <a href="smith.html">Low Energy, Low Fidelity</a> <br> <br>
+        <a href="index.html" id="home">Back to start</a> <br> <br>        </p>
+    </body>
+    <img id="artistPic" src="FR/scott.png"></img>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/album.css">
+<script type="text/javascript">
+    const artistImage = document.getElementById('artistPic');
+    window.addEventListener('scroll', function(){
+        artistPic.style.maxWidth = 90 - window.pageYOffset/10 + "vw";
+    })
+    </script>
+<script type="text/javascript">
+    const albumArt = document.getElementById('album');
+    window.addEventListener('scroll', function(){
+        album.style.maxWidth = 35 - window.pageYOffset/10 + "vw";
+    })
+    </script>
+    <head>
+        <title>Anima</title>
+    </head>
+    <body id="bg" style="background-image: url(Thom/bg.jpg); color:white;">
+        <img id="album" style="filter: drop-shadow(0 0 0.75rem grey);" src="Thom/eraser.gif">
+        <br>
+        <img id=description src="Thom/text.png">
+        <footer>
+            <a href="baxter.html">equal SYNTHS but a lot LIGHTER</a> <br>
+            <a href="thenational.html">Less Synth</a> <br> <br>
+            <a href="index.html" id="home">Back to start</a> <br> <br>        </footer>
+    </body>
+    <img id="artistPic" src="Thom/thom.png"></img>
+</html>
