@@ -1,0 +1,62 @@
+body {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    margin-left:2rem;
+}
+#bg {
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    max-height: 100vh;
+    max-width: 100vh;
+    background-color: black;
+    background-size:cover;
+}
+a {
+    color:white;
+    text-decoration: none;
+    white-space: pre;
+  }
+
+a:visited {
+    color: black;
+}
+#album {
+    margin-top:2rem;   
+    position:fixed;
+    max-width: 35vw;
+    min-width: 20vw;
+}
+#artistPic {
+    position:fixed;
+    bottom:-5%;
+    animation-name: artistShrink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    max-width:90vw;;
+    min-width:75vw;
+    margin-left:10vw;
+    float:right;
+    transform: translateX(300px);
+}
+#description {
+    max-width: 32rem;
+    margin-top: 80vw;
+    font-size: medium;
+    white-space: pre-wrap;
+}
+
+.link {
+    max-width: 32rem;
+    margin-bottom:0px;
+}
+@keyframes aristShrink {
+    0% {
+        margin-left: 16rem;
+    }
+}
+#inline {
+    max-width: 32rem;
+    justify-content: center;
+}
+#home:visited {
+    color:white !important;
+}

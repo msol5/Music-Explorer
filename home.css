@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'maison_neuebold';
+    src: url('Font/4a373e70cd01dec089c1dd1185ceba51-webfont.woff2') format('woff2'),
+         url('Font/4a373e70cd01dec089c1dd1185ceba51-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.container {
+    display:flex;
+    grid-template-columns:1fr 1fr 1fr;
+    min-height:100%;
+
+  }
+.row {
+  min-height:100%;
+}
+
+.column {
+    float: left;
+    min-height: 100%;
+    margin:0px;
+    padding: 0px;
+    width: 33.333333333333333%;
+    flex:1;
+    bottom: 0;
+    font-family:'maison_neuebold';
+}
+a {
+    color:white;
+    text-decoration: none;
+    font-size: xx-large;
+    white-space: pre;
+  }
+
+a:visited {
+    color: black;
+}
+  
+  .left {
+    background-color: cornflowerblue;
+    margin:0px;
+    padding: 0px;
+  } 
+  
+  .right {
+    background-color: darkorange;
+    margin:0px;
+    padding: 0px;
+  }
+  
+  .middle {
+    background-color: forestgreen;
+    margin:0px;
+    padding: 0px;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+div {
+    margin:0px;
+    padding: 0px;
+}
+body {
+    margin:0px;
+    padding: 0px;
+    width:100%;
+    height:100%;
+    font-family:'maison_neuebold';
+}
+.column:not(.column.right):hover{
+    grid-column:span 2;
+}
